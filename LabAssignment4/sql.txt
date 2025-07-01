@@ -1,0 +1,18 @@
+
+CREATE DATABASE expenditure_db;
+USE expenditure_db;
+
+CREATE TABLE domestic_visitors (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    component VARCHAR(100),
+    expenditure_2010 INT,
+    expenditure_2011 INT
+);
+
+INSERT INTO domestic_visitors (component, expenditure_2010, expenditure_2011) VALUES
+('Shopping', 8914, 13149),
+('Transport', 8098, 10019),
+('Food & beverages', 7975, 9691),
+('Accommodation', 6130, 5028),
+('Expenditure before trip/tickets', 894, 1097),
+('Other activities', 2667, 3362);
